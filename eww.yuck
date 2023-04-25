@@ -17,7 +17,6 @@
 (defpoll uptime :interval "1m" "uptime -p")
 (defpoll weather :interval "1h" "curl wttr.in/\?format=%t,%c")
 (defpoll genquote :interval "24h" "./scripts/quote.py")
-(defpoll literaltasks :interval "2s" "./scripts/todo.py get")
 (defpoll notesc :interval "2s" "cat -s ~/Documents/fuck.txt")
 
 (defvar reveal1 false)
@@ -118,6 +117,7 @@
                 (notes)))))
 
 (defwidget stats[]
+    ;; oh yea I can't interact with these widgets because they are under a eventbox ):
     (box
         :class "stats_widget"
         :width 410
@@ -267,6 +267,7 @@
                             :spacing 10
                             (label :text "${song} - ${artist}" :wrap false :show_truncated true :limit-width 15)
                             (button :onclick "scripts/music_info --prev" "󰒮")
+                            ;; for some reason, the play button isn't centered for me
                             (button :onclick "scripts/music_info --toggle" :style "padding: 0px 10px 0px 4px;" status)
                             (button :onclick "scripts/music_info --next" "󰒭"))
                         (scale :min -5 :active false :max 100 :value current :orientation "h")))))))
