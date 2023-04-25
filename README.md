@@ -1,4 +1,4 @@
-#EWWWTF - badly made eww widgets
+# EWWWTF - badly made eww widgets
 
 very hacky config, will deplete your sanity, read at your own risk
 
