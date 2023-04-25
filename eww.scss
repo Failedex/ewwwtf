@@ -158,6 +158,10 @@ calendar:indeterminate {
 }
 
 .graph_widget graph {
+    background-color: $surface1;
+}
+
+.graph_single {
     background-color: $surface0;
-    margin: 15px 0px;
+    margin: 0px 0px 15px 0px;
 }

@@ -168,6 +168,7 @@
         :orientation "v"
         :space-evenly false
         :visible vis
+        :class "graph_single"
         (graph
             :value value
             :min 0
